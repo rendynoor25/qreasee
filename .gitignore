@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+.vite/
+playwright-report/
+test-results/
+.DS_Store
+*.local
+
+# never commit local secrets or CAD references (they carry private data)
+.env
+.env.*
+*.log
+apps/web/public/ref-*.dwg
+apps/web/public/ref-*.dxf

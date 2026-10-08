@@ -1,0 +1,31 @@
+{
+  "id": "dormitory",
+  "version": 1,
+  "name": { "en": "Dormitory", "id": "Asrama" },
+  "buildingType": "dormitory",
+  "params": [
+    { "key": "beds", "label": { "en": "Beds in total", "id": "Total tempat tidur" }, "unit": "beds", "default": 120, "min": 8, "max": 600, "basis": "user" },
+    { "key": "bedsPerRoom", "label": { "en": "Beds per room", "id": "Tempat tidur per kamar" }, "default": 6, "min": 1, "max": 12, "basis": "typical" },
+    { "key": "areaPerBed", "label": { "en": "Area per bed", "id": "Luas per tempat tidur" }, "unit": "m²", "default": 3, "basis": "typical" },
+    { "key": "bedsPerBathroom", "label": { "en": "Beds per bathroom", "id": "Tempat tidur per KM" }, "default": 8, "min": 1, "max": 20, "basis": "typical" },
+    { "key": "commonRoom", "label": { "en": "Common room", "id": "Ruang bersama" }, "unit": "m²", "default": 40, "basis": "typical" },
+    { "key": "office", "label": { "en": "Office / staff", "id": "Kantor / pengasuh" }, "unit": "m²", "default": 16, "basis": "typical" }
+  ],
+  "qualityLevels": {
+    "economy": { "areaScale": 0.9, "costRateMultiplier": 0.9 },
+    "standard": { "areaScale": 1, "costRateMultiplier": 1 },
+    "premium": { "areaScale": 1.1, "costRateMultiplier": 1.25 }
+  },
+  "rows": [
+    { "group": "Private", "name": { "en": "Dorm room", "id": "Kamar tidur" }, "qty": "ceil(beds / bedsPerRoom)", "areaEach": "bedsPerRoom * areaPerBed", "needs": { "daylight": true, "ventilation": true, "privacy": "med" } },
+    { "group": "Wet", "name": { "en": "Bathroom", "id": "KM/WC" }, "qty": "ceil(beds / bedsPerBathroom)", "areaEach": "4.0", "needs": { "wet": true, "ventilation": true } },
+    { "group": "Public", "name": { "en": "Common room", "id": "Ruang bersama" }, "qty": "1", "areaEach": "commonRoom", "levelPref": "ground" },
+    { "group": "Service", "name": { "en": "Office / staff", "id": "Kantor / pengasuh" }, "qty": "1", "areaEach": "office", "levelPref": "ground" }
+  ],
+  "addons": [
+    { "id": "prayer", "label": { "en": "Prayer room", "id": "Musala" }, "rows": [ { "group": "Public", "name": { "en": "Prayer room", "id": "Musala" }, "qty": "1", "areaEach": "beds * 0.8" } ] },
+    { "id": "laundry", "label": { "en": "Laundry", "id": "Binatu" }, "rows": [ { "group": "Service", "name": { "en": "Laundry", "id": "Binatu" }, "qty": "1", "areaEach": "12", "needs": { "wet": true } } ] },
+    { "id": "shop", "label": { "en": "Rentable shop", "id": "Kios sewa" }, "rows": [ { "group": "Public", "name": { "en": "Rentable shop", "id": "Kios sewa" }, "qty": "1", "areaEach": "18", "levelPref": "ground", "when": "beds >= 60" } ] }
+  ],
+  "source": { "kind": "typical", "note": "Starter values, review before relying on them.", "asOf": "2026-10-03" }
+}

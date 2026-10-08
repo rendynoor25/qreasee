@@ -1,0 +1,319 @@
+﻿{
+    "version":  1,
+    "generatedAt":  "2026-10-08T09:24:18.2647347+07:00",
+    "count":  24,
+    "materials":  [
+                      {
+                          "id":  "qr-brick-brown",
+                          "name":  {
+                                       "id":  "Bata tanah liat (coklat)",
+                                       "en":  "Clay brick (brown)"
+                                   },
+                          "category":  "wall",
+                          "color":  "#a2654e",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-brick-brown.jpg",
+                          "textureScaleMm":  800
+                      },
+                      {
+                          "id":  "qr-brick-red",
+                          "name":  {
+                                       "id":  "Bata merah ekspos",
+                                       "en":  "Exposed red brick"
+                                   },
+                          "category":  "wall",
+                          "color":  "#ad563f",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-brick-red.jpg",
+                          "textureScaleMm":  800
+                      },
+                      {
+                          "id":  "qr-brick-white",
+                          "name":  {
+                                       "id":  "Bata putih",
+                                       "en":  "White brick"
+                                   },
+                          "category":  "wall",
+                          "color":  "#d0cabf",
+                          "roughness":  0.85,
+                          "opacity":  1,
+                          "texture":  "materials/qr-brick-white.jpg",
+                          "textureScaleMm":  800
+                      },
+                      {
+                          "id":  "qr-concrete-fair",
+                          "name":  {
+                                       "id":  "Beton ekspos halus",
+                                       "en":  "Fair-face concrete"
+                                   },
+                          "category":  "wall",
+                          "color":  "#a5a29c",
+                          "roughness":  0.85,
+                          "opacity":  1,
+                          "texture":  "materials/qr-concrete-fair.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-concrete-screed",
+                          "name":  {
+                                       "id":  "Screed beton",
+                                       "en":  "Concrete screed"
+                                   },
+                          "category":  "floor",
+                          "color":  "#999993",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-concrete-screed.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-concrete-paving",
+                          "name":  {
+                                       "id":  "Paving beton",
+                                       "en":  "Concrete paving"
+                                   },
+                          "category":  "floor",
+                          "color":  "#8b8b85",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-concrete-paving.jpg",
+                          "textureScaleMm":  600
+                      },
+                      {
+                          "id":  "qr-stone-andesite",
+                          "name":  {
+                                       "id":  "Batu andesit",
+                                       "en":  "Andesite"
+                                   },
+                          "category":  "wall",
+                          "color":  "#4b4e4e",
+                          "roughness":  0.95,
+                          "opacity":  1,
+                          "texture":  "materials/qr-stone-andesite.jpg",
+                          "textureScaleMm":  600
+                      },
+                      {
+                          "id":  "qr-stone-granite",
+                          "name":  {
+                                       "id":  "Granit hitam",
+                                       "en":  "Black granite"
+                                   },
+                          "category":  "floor",
+                          "color":  "#2e2e2e",
+                          "roughness":  0.25,
+                          "opacity":  1,
+                          "texture":  "materials/qr-stone-granite.jpg",
+                          "textureScaleMm":  600
+                      },
+                      {
+                          "id":  "qr-stone-limestone",
+                          "name":  {
+                                       "id":  "Batu kapur krem",
+                                       "en":  "Cream limestone"
+                                   },
+                          "category":  "wall",
+                          "color":  "#bcb090",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-stone-limestone.jpg",
+                          "textureScaleMm":  800
+                      },
+                      {
+                          "id":  "qr-wood-walnut",
+                          "name":  {
+                                       "id":  "Kayu walnut gelap",
+                                       "en":  "Dark walnut"
+                                   },
+                          "category":  "wood",
+                          "color":  "#5f3c28",
+                          "roughness":  0.55,
+                          "opacity":  1,
+                          "texture":  "materials/qr-wood-walnut.jpg",
+                          "textureScaleMm":  1200
+                      },
+                      {
+                          "id":  "qr-wood-oak",
+                          "name":  {
+                                       "id":  "Kayu oak terang",
+                                       "en":  "Light oak"
+                                   },
+                          "category":  "wood",
+                          "color":  "#ad8551",
+                          "roughness":  0.55,
+                          "opacity":  1,
+                          "texture":  "materials/qr-wood-oak.jpg",
+                          "textureScaleMm":  1200
+                      },
+                      {
+                          "id":  "qr-wood-teak",
+                          "name":  {
+                                       "id":  "Kayu jati alami",
+                                       "en":  "Natural teak"
+                                   },
+                          "category":  "wood",
+                          "color":  "#8b562e",
+                          "roughness":  0.55,
+                          "opacity":  1,
+                          "texture":  "materials/qr-wood-teak.jpg",
+                          "textureScaleMm":  1200
+                      },
+                      {
+                          "id":  "qr-timber-plank",
+                          "name":  {
+                                       "id":  "Papan kayu",
+                                       "en":  "Timber plank"
+                                   },
+                          "category":  "wood",
+                          "color":  "#90684b",
+                          "roughness":  0.6,
+                          "opacity":  1,
+                          "texture":  "materials/qr-timber-plank.png",
+                          "textureScaleMm":  1200
+                      },
+                      {
+                          "id":  "qr-paint-charcoal",
+                          "name":  {
+                                       "id":  "Cat arang",
+                                       "en":  "Charcoal paint"
+                                   },
+                          "category":  "wall",
+                          "color":  "#42423f",
+                          "roughness":  0.88,
+                          "opacity":  1,
+                          "texture":  "materials/qr-paint-charcoal.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-paint-lightgrey",
+                          "name":  {
+                                       "id":  "Cat abu terang",
+                                       "en":  "Light grey paint"
+                                   },
+                          "category":  "wall",
+                          "color":  "#c7cac5",
+                          "roughness":  0.88,
+                          "opacity":  1,
+                          "texture":  "materials/qr-paint-lightgrey.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-roof-clay",
+                          "name":  {
+                                       "id":  "Genteng tanah liat",
+                                       "en":  "Clay roof tile"
+                                   },
+                          "category":  "roof",
+                          "color":  "#a54b25",
+                          "roughness":  0.9,
+                          "opacity":  1,
+                          "texture":  "materials/qr-roof-clay.jpg",
+                          "textureScaleMm":  600
+                      },
+                      {
+                          "id":  "qr-roof-concrete",
+                          "name":  {
+                                       "id":  "Genteng beton",
+                                       "en":  "Concrete roof tile"
+                                   },
+                          "category":  "roof",
+                          "color":  "#888882",
+                          "roughness":  0.85,
+                          "opacity":  1,
+                          "texture":  "materials/qr-roof-concrete.jpg",
+                          "textureScaleMm":  600
+                      },
+                      {
+                          "id":  "qr-roof-metal",
+                          "name":  {
+                                       "id":  "Atap metal",
+                                       "en":  "Metal roof"
+                                   },
+                          "category":  "roof",
+                          "color":  "#717676",
+                          "roughness":  0.45,
+                          "opacity":  1,
+                          "texture":  "materials/qr-roof-metal.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-metal-brushed",
+                          "name":  {
+                                       "id":  "Aluminium sikat",
+                                       "en":  "Brushed aluminium"
+                                   },
+                          "category":  "metal",
+                          "color":  "#b9b9b9",
+                          "roughness":  0.35,
+                          "opacity":  1,
+                          "texture":  "materials/qr-metal-brushed.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-metal-galvanized",
+                          "name":  {
+                                       "id":  "Baja galvanis",
+                                       "en":  "Galvanized steel"
+                                   },
+                          "category":  "metal",
+                          "color":  "#909090",
+                          "roughness":  0.4,
+                          "opacity":  1,
+                          "texture":  "materials/qr-metal-galvanized.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-metal-black",
+                          "name":  {
+                                       "id":  "Metal hitam dof",
+                                       "en":  "Matte black metal"
+                                   },
+                          "category":  "metal",
+                          "color":  "#2e312b",
+                          "roughness":  0.5,
+                          "opacity":  1,
+                          "texture":  "materials/qr-metal-black.jpg",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-grass",
+                          "name":  {
+                                       "id":  "Rumput",
+                                       "en":  "Grass"
+                                   },
+                          "category":  "floor",
+                          "color":  "#377c31",
+                          "roughness":  0.95,
+                          "opacity":  1,
+                          "texture":  "materials/qr-grass.png",
+                          "textureScaleMm":  800
+                      },
+                      {
+                          "id":  "qr-glass-clear",
+                          "name":  {
+                                       "id":  "Kaca bening",
+                                       "en":  "Clear glass"
+                                   },
+                          "category":  "glass",
+                          "color":  "#d6eaf4",
+                          "roughness":  0.08,
+                          "opacity":  0.35,
+                          "texture":  "materials/qr-glass-clear.png",
+                          "textureScaleMm":  1000
+                      },
+                      {
+                          "id":  "qr-glass-frosted",
+                          "name":  {
+                                       "id":  "Kaca buram",
+                                       "en":  "Frosted glass"
+                                   },
+                          "category":  "glass",
+                          "color":  "#d6eaf4",
+                          "roughness":  0.45,
+                          "opacity":  0.6,
+                          "texture":  "materials/qr-glass-frosted.png",
+                          "textureScaleMm":  1000
+                      }
+                  ]
+}

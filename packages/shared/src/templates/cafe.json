@@ -1,0 +1,23 @@
+{
+  "id": "cafe",
+  "name": { "en": "Café / Restaurant", "id": "Kafe / Restoran" },
+  "description": {
+    "en": "Dining, bar, kitchen and outdoor seating.",
+    "id": "Area makan, bar, dapur, dan tempat duduk luar."
+  },
+  "brief": {
+    "en": "Café: a strong counter, visible kitchen, and as much outdoor seating as the plot allows.",
+    "id": "Kafe: counter yang kuat, dapur terlihat, dan tempat duduk luar sebanyak mungkin."
+  },
+  "buildingType": "cafe",
+  "program": [
+    { "name": "Dining", "targetArea": 60 },
+    { "name": "Bar", "targetArea": 10 },
+    { "name": "Kitchen", "targetArea": 18 },
+    { "name": "Toilets", "targetArea": 7 },
+    { "name": "Storage", "targetArea": 6 },
+    { "name": "Outdoor seating", "targetArea": 30 }
+  ],
+  "ratePerM2": { "low": 5000000, "high": 9000000 },
+  "site": { "widthM": 15, "depthM": 20 }
+}

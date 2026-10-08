@@ -1,0 +1,23 @@
+{
+  "id": "school",
+  "name": { "en": "School", "id": "Sekolah" },
+  "description": {
+    "en": "Classrooms, staff room, library, canteen and toilets.",
+    "id": "Ruang kelas, ruang guru, perpustakaan, kantin, dan toilet."
+  },
+  "brief": {
+    "en": "School: classrooms on the quiet side, canteen and play areas toward the street.",
+    "id": "Sekolah: ruang kelas di sisi tenang, kantin dan area bermain ke arah jalan."
+  },
+  "buildingType": "small-office",
+  "program": [
+    { "name": "Classroom", "targetArea": 336 },
+    { "name": "Staff room", "targetArea": 32 },
+    { "name": "Library", "targetArea": 40 },
+    { "name": "Canteen", "targetArea": 40 },
+    { "name": "Toilets", "targetArea": 24 },
+    { "name": "Circulation", "targetArea": 60 }
+  ],
+  "ratePerM2": { "low": 4000000, "high": 7000000 },
+  "site": { "widthM": 45, "depthM": 50 }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@qreasee/geometry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@qreasee/shared": "workspace:*",
+    "clipper2-js": "^1.2.4",
+    "earcut": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/earcut": "^3.0.0"
+  }
+}

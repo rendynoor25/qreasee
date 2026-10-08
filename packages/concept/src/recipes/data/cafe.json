@@ -1,0 +1,31 @@
+{
+  "id": "cafe",
+  "version": 1,
+  "name": { "en": "Café / Restaurant", "id": "Kafe / Restoran" },
+  "buildingType": "cafe",
+  "params": [
+    { "key": "seats", "label": { "en": "Seats", "id": "Jumlah kursi" }, "unit": "seats", "default": 80, "min": 10, "max": 400, "basis": "user" },
+    { "key": "areaPerSeat", "label": { "en": "Area per seat", "id": "Luas per kursi" }, "unit": "m²", "default": 1.5, "basis": "typical" },
+    { "key": "kitchen", "label": { "en": "Kitchen", "id": "Dapur" }, "unit": "m²", "default": 18, "basis": "typical" },
+    { "key": "bar", "label": { "en": "Bar / counter", "id": "Bar / kasir" }, "unit": "m²", "default": 10, "basis": "typical" },
+    { "key": "storage", "label": { "en": "Storage", "id": "Gudang" }, "unit": "m²", "default": 6, "basis": "typical" }
+  ],
+  "qualityLevels": {
+    "economy": { "areaScale": 0.9, "costRateMultiplier": 0.9 },
+    "standard": { "areaScale": 1, "costRateMultiplier": 1 },
+    "premium": { "areaScale": 1.1, "costRateMultiplier": 1.3 }
+  },
+  "rows": [
+    { "group": "Public", "name": { "en": "Dining", "id": "Ruang makan" }, "qty": "1", "areaEach": "seats * areaPerSeat", "levelPref": "ground", "needs": { "daylight": true } },
+    { "group": "Public", "name": { "en": "Bar / counter", "id": "Bar / kasir" }, "qty": "1", "areaEach": "bar", "levelPref": "ground" },
+    { "group": "Service", "name": { "en": "Kitchen", "id": "Dapur" }, "qty": "1", "areaEach": "kitchen", "levelPref": "ground", "needs": { "wet": true, "ventilation": true } },
+    { "group": "Wet", "name": { "en": "Toilets", "id": "Toilet" }, "qty": "ceil(seats / 30)", "areaEach": "4", "needs": { "wet": true } },
+    { "group": "Service", "name": { "en": "Storage", "id": "Gudang" }, "qty": "1", "areaEach": "storage" },
+    { "group": "Outdoor", "name": { "en": "Outdoor seating", "id": "Tempat duduk luar" }, "qty": "1", "areaEach": "seats * 0.4", "when": "seats >= 40", "needs": { "outdoor": true } }
+  ],
+  "addons": [
+    { "id": "drive", "label": { "en": "Drive-through", "id": "Drive-through" }, "rows": [ { "group": "Service", "name": { "en": "Drive-through lane", "id": "Jalur drive-through" }, "qty": "1", "areaEach": "24" } ] },
+    { "id": "meeting", "label": { "en": "Meeting / co-working", "id": "Ruang rapat / kerja" }, "rows": [ { "group": "Public", "name": { "en": "Meeting room", "id": "Ruang rapat" }, "qty": "1", "areaEach": "16" } ] }
+  ],
+  "source": { "kind": "typical", "note": "Starter values, review before relying on them.", "asOf": "2026-10-03" }
+}

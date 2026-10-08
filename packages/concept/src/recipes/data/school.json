@@ -1,0 +1,30 @@
+{
+  "id": "school",
+  "version": 1,
+  "name": { "en": "School", "id": "Sekolah" },
+  "buildingType": "school",
+  "params": [
+    { "key": "classrooms", "label": { "en": "Classrooms", "id": "Ruang kelas" }, "default": 6, "min": 2, "max": 36, "basis": "user" },
+    { "key": "areaPerClassroom", "label": { "en": "Area per classroom", "id": "Luas per kelas" }, "unit": "m²", "default": 56, "basis": "typical" },
+    { "key": "staffRoom", "label": { "en": "Staff room", "id": "Ruang guru" }, "unit": "m²", "default": 32, "basis": "typical" },
+    { "key": "library", "label": { "en": "Library", "id": "Perpustakaan" }, "unit": "m²", "default": 40, "basis": "typical" },
+    { "key": "canteen", "label": { "en": "Canteen", "id": "Kantin" }, "unit": "m²", "default": 40, "basis": "typical" }
+  ],
+  "qualityLevels": {
+    "economy": { "areaScale": 0.9, "costRateMultiplier": 0.9 },
+    "standard": { "areaScale": 1, "costRateMultiplier": 1 },
+    "premium": { "areaScale": 1.1, "costRateMultiplier": 1.25 }
+  },
+  "rows": [
+    { "group": "Public", "name": { "en": "Classroom", "id": "Ruang kelas" }, "qty": "classrooms", "areaEach": "areaPerClassroom", "needs": { "daylight": true, "ventilation": true } },
+    { "group": "Service", "name": { "en": "Staff room", "id": "Ruang guru" }, "qty": "1", "areaEach": "staffRoom" },
+    { "group": "Public", "name": { "en": "Library", "id": "Perpustakaan" }, "qty": "1", "areaEach": "library", "needs": { "daylight": true } },
+    { "group": "Public", "name": { "en": "Canteen", "id": "Kantin" }, "qty": "1", "areaEach": "canteen", "levelPref": "ground" },
+    { "group": "Wet", "name": { "en": "Toilets", "id": "Toilet" }, "qty": "ceil(classrooms / 2)", "areaEach": "8", "needs": { "wet": true, "ventilation": true } }
+  ],
+  "addons": [
+    { "id": "lab", "label": { "en": "Laboratory", "id": "Laboratorium" }, "rows": [ { "group": "Public", "name": { "en": "Laboratory", "id": "Laboratorium" }, "qty": "1", "areaEach": "72" } ] },
+    { "id": "prayer", "label": { "en": "Prayer room", "id": "Musala" }, "rows": [ { "group": "Public", "name": { "en": "Prayer room", "id": "Musala" }, "qty": "1", "areaEach": "classrooms * 6" } ] }
+  ],
+  "source": { "kind": "typical", "note": "Starter values, review before relying on them.", "asOf": "2026-10-03" }
+}

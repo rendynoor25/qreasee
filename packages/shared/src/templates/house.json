@@ -1,0 +1,27 @@
+{
+  "id": "house",
+  "name": { "en": "House", "id": "Rumah" },
+  "description": {
+    "en": "A family home — living, kitchen, bedrooms, carport.",
+    "id": "Rumah tinggal — ruang tamu, dapur, kamar, carport."
+  },
+  "brief": {
+    "en": "Family house: open living / dining / kitchen on the ground floor, bedrooms above.",
+    "id": "Rumah tinggal: ruang tamu / makan / dapur terbuka di lantai dasar, kamar di atas."
+  },
+  "buildingType": "house",
+  "program": [
+    { "name": "Living", "targetArea": 20 },
+    { "name": "Dining", "targetArea": 12 },
+    { "name": "Kitchen", "targetArea": 9 },
+    { "name": "Master bedroom", "targetArea": 14 },
+    { "name": "Bedroom 2", "targetArea": 11 },
+    { "name": "Bedroom 3", "targetArea": 11 },
+    { "name": "Bathroom 1", "targetArea": 4 },
+    { "name": "Bathroom 2", "targetArea": 4 },
+    { "name": "Carport", "targetArea": 15 },
+    { "name": "Service", "targetArea": 6 }
+  ],
+  "ratePerM2": { "low": 4500000, "high": 7500000 },
+  "site": { "widthM": 12, "depthM": 25 }
+}

@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --brand: 240 145 59;
+  --ink-950: 11 13 16;
+  --ink-900: 18 21 26;
+  --ink-800: 26 30 37;
+  --ink-700: 36 42 51;
+  --ink-600: 51 59 71;
+  --ink-500: 74 85 99;
+  --ink-400: 107 118 134;
+  --ink-300: 154 164 178;
+  --ink-200: 199 205 214;
+  --ink-100: 232 235 239;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --brand: 240 145 59;
+  --ink-950: 246 247 249;
+  --ink-900: 255 255 255;
+  --ink-800: 226 229 234;
+  --ink-700: 208 213 221;
+  --ink-600: 180 187 198;
+  --ink-500: 138 147 160;
+  --ink-400: 100 110 125;
+  --ink-300: 65 75 89;
+  --ink-200: 42 50 61;
+  --ink-100: 20 26 34;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  @apply bg-ink-950 text-ink-100 font-sans antialiased;
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333b47 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #333b47;
+  border-radius: 4px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.qr-fade {
+  animation: qr-fade 160ms ease-out;
+}
+@keyframes qr-fade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.qr-nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "qreasee",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Qreasee — playful massing with live consequences and decision branches.",
+  "packageManager": "pnpm@10.34.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @qreasee/web dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:unit": "pnpm --filter @qreasee/geometry test && pnpm --filter @qreasee/indicators test && pnpm --filter @qreasee/document test",
+    "typecheck": "turbo run typecheck",
+    "materials": "powershell -ExecutionPolicy Bypass -File scripts/build-material-library.ps1",
+    "e2e": "pnpm --filter @qreasee/web e2e"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

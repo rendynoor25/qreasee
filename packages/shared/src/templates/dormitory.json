@@ -1,0 +1,22 @@
+{
+  "id": "dormitory",
+  "name": { "en": "Dormitory", "id": "Asrama" },
+  "description": {
+    "en": "12 rooms, shared bathrooms, common room, laundry.",
+    "id": "12 kamar, kamar mandi bersama, ruang bersama, binatu."
+  },
+  "brief": {
+    "en": "Dormitory: repeat 12 identical rooms along a corridor, shared bathroom and common room at the ends.",
+    "id": "Asrama: ulangi 12 kamar identik di sepanjang koridor, kamar mandi bersama dan ruang bersama di ujung."
+  },
+  "buildingType": "small-office",
+  "program": [
+    { "name": "Dorm room", "targetArea": 216 },
+    { "name": "Shared bath", "targetArea": 30 },
+    { "name": "Common room", "targetArea": 40 },
+    { "name": "Laundry", "targetArea": 12 },
+    { "name": "Corridor", "targetArea": 48 }
+  ],
+  "ratePerM2": { "low": 4500000, "high": 7000000 },
+  "site": { "widthM": 30, "depthM": 45 }
+}
